@@ -1,0 +1,124 @@
+/*TODO: Make navigation horizontal on all pages*/
+/*TODO: Hide navigation behind flyout for mobile - except for homepage*/
+/*TODO: Fix tablet width and higher layout (centered itmss, not text)*/
+
+
+/*    GLOBAL            */
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 3em;
+}
+
+footer{
+    min-width: 100%;
+	text-align: center;
+}
+
+footer img{
+	height: 14px;
+}
+
+header{
+	min-height: 80px;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.pageDesc p{
+	font-size: 1.3em;
+}
+
+.finePrint{
+    display: block;
+    font-size: 0.3em
+}
+
+/*    HOME PAGE         */
+
+#index_intro{
+    width: 100%;
+    text-align: left;
+    padding: 60px 10% 0 10%;
+    flex:1
+}
+
+#hello p{
+    font-size: 2em;
+    line-height: 0.9em;
+}
+
+#things{
+    display: flex;
+    justify-content: space-between;
+}
+
+#index_intro nav li{
+    display: inline;
+}
+
+/*    CONTACT PAGE      */
+
+#contact_form{
+	border: 1px solid black;
+}
+
+#contact_form .formRow input[type='text'],
+#contact_form .formRow input[type='email']{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 200px;
+}
+
+#contact_form .formRow input[type='text']:invalid,
+#contact_form .formRow input[type='email']:invalid{
+    border: 1px solid red;
+    color: #D55C5F;
+    box-shadow: none;
+}
+
+#contact_form .formRow input[type='text']:focus,
+#contact_form .formRow input[type='email']:focus{
+}
+
+/*    PORTFOLIO PAGE    */
+
+#portBoxes{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 0 20px;
+}
+
+.portBox{
+	width: 50%;
+	height: 120px;
+	border: 1px solid black;
+}
+
+/*    Blog Page         */
+
+
+/*    LET'S GET RESPONSIVE!!!11!!    */
+
+@media only screen and (min-width: 401px) and (max-width: 960px){
+
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1200px){
+
+}
+
+@media only screen and (min-width: 1201px){
+
+}
